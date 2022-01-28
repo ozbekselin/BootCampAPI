@@ -27,7 +27,7 @@ ResponseBody verifing = responsive.getBody();
 String converts = verifing.asString();
 Assert.assertEquals(converts.contains("Tracey"), true);
 
-File it = new File ("C:\\Users\\murat\\eclipse-workspaceboothcamp\\API\\Api.json");
+File it = new File ("C:\\Users\\murat\\git\\BootCampAPI\\API\\Api.json");
 Response gt = given().contentType(ContentType.JSON).body(it).post("https://reqres.in/api/users");
 gt.prettyPrint();
 }

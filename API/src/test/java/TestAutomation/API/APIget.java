@@ -29,7 +29,7 @@ public class APIget{
 		String converts = verifing.asString();
 		Assert.assertEquals(converts.contains("Funke"), true);
 
-		File it = new File ("C:\\\\Users\\\\murat\\\\eclipse-workspaceboothcamp\\\\API\\\\Api.json");
+		File it = new File ("C:\\Users\\murat\\git\\BootCampAPI\\API\\Api.json");
 		Response gt = given().contentType(ContentType.JSON).body(it).get("https://reqres.in/api/users");
 		gt.prettyPrint();
 		}
